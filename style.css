@@ -1,0 +1,304 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'El Messiri', sans-serif;
+}
+
+body {
+    background: #3B3C51;
+    color: #4F89D3;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Desktop\ -\ 2.png);
+    background-size: cover;
+    background-position: center;
+}
+    
+.wrapper {
+    padding: 10px 10%;
+   
+}
+
+.logo {
+    font-size: 2rem;
+    text-shadow: 5px 5px 5px #000;
+}
+
+.logo span {
+    color: #AAAAAA;
+    font-size: 5rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    position: relative;
+}
+
+li, a {
+    list-style: none;
+    text-decoration: none;
+    color: #4F89D3;
+    font-size: 1.3rem;
+    text-shadow: 5px 5px 5px #000;
+}
+
+li a:hover {
+    font-size: 1.5rem;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #AAAAAA;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    cursor: pointer;
+    text-shadow: 5px 5px 5px #000;
+}
+
+.header-text {
+    margin-top: 12rem;
+    font-size: 2rem;
+    text-shadow: 5px 5px 5px #000;
+}
+
+.header-text h1 {
+    color: #AAAAAA;
+}
+
+#icons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 21rem;
+    left: 3rem;
+}
+
+.icon {
+    width: 34px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.icon:hover{
+    width: 45px;
+    cursor: pointer;
+}
+
+.line {
+    width: 286px;
+    padding: 2px;
+    background-color: #4F89D3;
+    transform: rotate(90deg);
+    margin-left: -128px;
+    margin-top: 124px;
+}
+
+/* ----------------About Section Styling----------------- */
+#about {
+    padding: 5rem 0rem;
+    text-shadow: 5px 5px 5px #000;
+}
+
+.border {
+    border: 5px solid #4F89D3;
+    border-radius: 50%;
+    padding: 0px 20px;
+    background-color: #AAAAAA;
+    width: 90%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about_left {
+    /* this means the width of the col will not be more than 35% */
+    flex-basis: 35%;
+    
+}
+
+.about_right {
+     /* this means the width of the col will not be more than 60% and 
+     the 5% will create the space btw the 2 col.  */
+     flex-basis: 60%;
+} 
+
+.about_right p {
+    color: #AAAAAA;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.text_title {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.about_titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.about_links {
+    margin-right: 3.2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color: #AAAAAA;
+}
+
+.about_links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #4F89D3;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.about_links.active_link::after {
+    width: 50%;
+}
+
+.about_content ul li {
+    color: #AAAAAA;
+    margin: 10px 0;
+    list-style: none;
+}
+
+.about_content ul li span {
+    color: #4F89D3;
+    font-size: 16px;
+    display: block;
+}
+
+.about_content {
+    display: none;
+}
+
+.about_content.active_tab {
+    display: block;
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+
+
+/*--------------------------Media query scetion-----------------------------------------*/
+@media only screen and (max-width: 600px) {
+    header {
+        background-image: url(images/mobile-bg3.png);
+        background-position: center;
+        background-size: cover;
+    } 
+    
+    .header-text {
+        margin-top: 100%;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .header-text h1 {
+        font-size: 1.8rem;
+    }
+
+    #icons {
+        position: absolute;
+        left: 0.5rem;
+        top: 17rem;
+    }
+
+    .line {
+        display: none;
+    }
+
+    br {
+        display: none;
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        background-color: #4F89D3;
+        position: fixed;
+        top: 0;
+        right: -200px; /*bcos the width is 200 and will need it to be less visible on the open icon is clicked*/
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        color: #AAAAAA;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul li a {
+        color: #AAAAAA;
+        font-weight: 700;
+        /* text-shadow: none; */
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    nav ul li a::after {
+        background: none;
+        
+    }
+
+    .logo, .logo span {
+        margin-bottom: 1rem;
+    }
+
+    /*--------------About Section------------------ */
+
+    .text_title {
+        font-size: 2rem;
+    }
+
+    .about_left, .about_right {
+        flex-basis: 100%;
+    }
+
+    .border {
+        border-radius: 20px;
+        /* width: 75vw; */
+    }
+}
