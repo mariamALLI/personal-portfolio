@@ -28,7 +28,7 @@
             </nav>
             <div class="header-text">
                 <p>Front-End Developer</p>
-                <h1>Hi, I'm Mariam </br>Oluseyi-Alli From </br> Lagos, Nigeria</h1>
+                <h1>Hi, I'm Mariam </br>Oluseyi-Alli From </br> Lagos, Nigeria.</h1>
             </div>
 
             <div id="icons">
@@ -41,57 +41,98 @@
     </header>
 
     <!-- *********************About Section*************** -->
+<main>
+        <div id="about">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="about_left">
+                        <img class="border" src="images/user3.png" alt="personal picture">
+                    </div>
+                    <div class="about_right">
+                        <h1 class="text_title">About Me</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Blanditiis, praesentium esse minima inventore 
+                            dolores dolore vitae quisquam ipsam perspiciatis in animi facere 
+                            delectus dolorem, dicta numquam rerum nihil corporis a.
+                        </p>
 
-    <div id="about">
-        <div class="wrapper">
-            <div class="row">
-                <div class="about_left">
-                    <img class="border" src="images/user3.png" alt="personal picture">
+                        <div class="about_titles">
+                            <p class="about_links active_link" onclick="openTab('skills')">Skills</p>
+                            <p class="about_links" onclick="openTab('experience')">Experience</p>
+                            <p class="about_links" onclick="openTab('education')">Education</p>
+                        </div>
+
+                        <div class="about_content active_tab" id="skills">
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                                <li>Bootstrap</li>
+                                <li>Figma</li>
+                                <li>React.js</li>
+                            </ul>
+                        </div>
+
+                        <div class="about_content" id="experience">
+                            <ul>
+                                <li><span>October 2022</span>Frontend Developer Training Certification from Scrimba</li>
+                                <li><span>May - August 2022</span>FullStack Training Certification from Code First Girl (CFG)</li>
+                                <li><span>April - June 2022</span>Frontend Developer Intern at Nerdy Eye Nigeria</li>
+                                <li><span>April - October 2021</span>Responsive Web Design from FreeCodeCamp (FCC)</li>
+                            </ul>
+                        </div>
+
+                        <div class="about_content" id="education">
+                            <ul>
+                                <li><span>2014</span>MSc Pulic Health from Anglia Ruskin University United Kingdom</li>
+                                <li><span>2010</span>BSc Biochemistry from University of Ilorin Nigeria</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="about_right">
-                    <h1 class="text_title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Blanditiis, praesentium esse minima inventore 
-                        dolores dolore vitae quisquam ipsam perspiciatis in animi facere 
-                        delectus dolorem, dicta numquam rerum nihil corporis a.
-                    </p>
+            </div>
+        </div>
+</main>
 
-                    <div class="about_titles">
-                        <p class="about_links active_link" onclick="openTab('skills')">Skills</p>
-                        <p class="about_links" onclick="openTab('experience')">Experience</p>
-                        <p class="about_links" onclick="openTab('education')">Education</p>
+
+<!------------------------Portfolio Section----------------------------->
+
+<section>
+    <div id="portfolio">
+        <div class="wrapper">
+            <h1 class="text_title">My Projects</h1> 
+
+            <div class="project_list">
+                <div class="project">
+                    <img src="images/dropdown_nav.png" alt="dropdown navigation page">
+                    <div class="link_layer">
+                        <h3>Dropdown Nav Page</h3>
+                        <p>This page displays dropdown navigation with the help of JavaScript</p>
+                        <a href="https://melodious-sprite-02e881.netlify.app/"><i class="fa-solid fa-link"></i></a>
                     </div>
+                </div>
 
-                    <div class="about_content active_tab" id="skills">
-                        <ul>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>Bootstrap</li>
-                            <li>Figma</li>
-                            <li>React.js</li>
-                        </ul>
+                <div class="project">
+                    <img src="images/landing_page1.png" alt="a landing page">
+                    <div class="link_layer">
+                        <h3>Huddle Multiple Landing Page</h3>
+                        <p>This is a landing page with different section, built with semantic html5 and css3</p>
+                        <a href="https://huddle-altnatv-landngpg.netlify.app/"><i class="fa-solid fa-link"></i></a>
                     </div>
+                </div>
 
-                    <div class="about_content" id="experience">
-                        <ul>
-                            <li><span>October 2022</span>Frontend Developer Training Certification from Scrimba</li>
-                            <li><span>May - August 2022</span>FullStack Training Certification from Code First Girl (CFG)</li>
-                            <li><span>April - June 2022</span>Frontend Developer Intern at Nerdy Eye Nigeria</li>
-                            <li><span>April - October 2021</span>Responsive Web Design from FreeCodeCamp (FCC)</li>
-                        </ul>
-                    </div>
-
-                    <div class="about_content" id="education">
-                        <ul>
-                            <li><span>2014</span>MSc Pulic Health from Anglia Ruskin University United Kingdom</li>
-                            <li><span>2010</span>BSc Biochemistry from University of Ilorin Nigeria</li>
-                        </ul>
+                <div class="project">
+                    <img src="images/landing_page2.png" alt="landing page">
+                    <div class="link_layer">
+                        <h3>Huddle Single Landing Page</h3>
+                        <p>This is a single landing page, built with semantic html5 and css3</p>
+                        <a href="https://huddle-single-landpg.netlify.app/"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</section>
 
     <script src="index.js"></script>
 </body>
