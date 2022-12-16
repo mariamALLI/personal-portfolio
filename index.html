@@ -18,8 +18,8 @@
                 <h1 class="logo">MOA<span>.</span></h1>
                 <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Project</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Project</a></li>
                     <li><a href="#">Contact</a></li>
 
                     <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
@@ -95,7 +95,7 @@
 </main>
 
 
-<!------------------------Portfolio Section----------------------------->
+<!------------------------Projects Section----------------------------->
 
 <section>
     <div id="portfolio">
@@ -108,7 +108,7 @@
                     <div class="link_layer">
                         <h3>Dropdown Nav Page</h3>
                         <p>This page displays dropdown navigation with the help of JavaScript</p>
-                        <a href="https://melodious-sprite-02e881.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                        <a target="_blank" href="https://melodious-sprite-02e881.netlify.app/"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
 
@@ -117,22 +117,76 @@
                     <div class="link_layer">
                         <h3>Huddle Multiple Landing Page</h3>
                         <p>This is a landing page with different section, built with semantic html5 and css3</p>
-                        <a href="https://huddle-altnatv-landngpg.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                        <a target="_blank" href="https://huddle-altnatv-landngpg.netlify.app/"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
 
                 <div class="project">
-                    <img src="images/landing_page2.png" alt="landing page">
+                    <img src="images/unit_converter.png" alt="Unit converter">
                     <div class="link_layer">
-                        <h3>Huddle Single Landing Page</h3>
-                        <p>This is a single landing page, built with semantic html5 and css3</p>
-                        <a href="https://huddle-single-landpg.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                        <h3>Unit Converter</h3>
+                        <p>This is a unit converter that converts length,volume and mass</p>
+                        <a target="_blank" href="https://unit-conversn.netlify.app/"><i class="fa-solid fa-link"></i></a>
                     </div>
+                </div>
+                  
+            </div>
+            <a target="_blank" class="btn" href="projects.html">See more</a>
+        </div>
+    </div>
+</section>
+
+
+<!---------------------------Contact------------------>
+<section>
+    <div id="contact">
+        <div class="wrapper">
+            <div class="row">
+                <div class="contact_left">
+                    <h1 class="text_title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>mariam_oa@yahoo.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+2349051134511</p>
+
+                    <div class="icons">
+                        <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/mariam-oluseyi-alli-a7964b21a/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank" class="github" href="https://github.com/mariamALLI"><i class="fa-brands fa-github"></i></a>
+                        <a target="_blank" class="twitter" href="https://twitter.com/mariam_oalli"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+
+                    <a class="btn cv-btn" href="images/Mariam_OluseyiAlli_Resume_frontend Dev.docx" download>Download CV</a>
+                </div>
+
+                <div class="contact_right">
+                    <form>
+                        <input type="text" 
+                        name="Name" 
+                        placeholder="Your name" 
+                        aria-label="Name" 
+                        required>
+
+                        <input type="email" 
+                        name="Email" 
+                        placeholder="Your email" 
+                        aria-label="Email" 
+                        required>
+
+                        <textarea name="Message"  
+                        rows="6" 
+                        placeholder="Your Message">
+                        </textarea>
+
+                        <button class="btn cv-btn" type="submit">Submit</button>
+
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<footer>
+    <p>Copyright © MOA. Made with <i class="fa-solid fa-heart"></i> by Mariam Alli </p>
+</footer>
 
     <script src="index.js"></script>
 </body>

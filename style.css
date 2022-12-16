@@ -16,7 +16,7 @@ header {
     background-image: url(images/Desktop\ -\ 2.png);
     background-size: cover;
     background-position: center;
-    border-bottom: 5px solid #4F89D3;
+    /* border-bottom: 5px solid #4F89D3; */
 }
     
 .wrapper {
@@ -282,6 +282,91 @@ nav .fa-solid {
     text-shadow: none;
 }
 
+.btn {
+    display: block;
+    margin: 40px auto;
+    border: 2px solid #4F89D3;
+    color: #AAAAAA;
+    width: fit-content;
+    padding: 12px 40px;
+    border-radius: 15px;
+    transition: background 0.5s;
+}
+
+.btn:hover,
+.btn:focus {
+    background: linear-gradient(rgba(0,0,0,0.6), #4F89D3);
+    cursor: pointer;
+    color: #fff;
+}
+
+/* ---------------Contact Styling------------------ */
+.contact_left {
+    flex-basis: 35%;
+}
+
+.contact_right {
+    flex-basis: 60%;
+}
+
+.contact_left p {
+    margin-top: 30px;
+}
+
+.contact_left p i {
+    margin-right: 15px;
+}
+
+.contact_left .icons a i {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 15px;
+    transition: transform 0.5s;
+    font-size: 20px;
+}
+
+.contact_left .icons a i:hover,
+.contact_left .icons a i:focus {
+    color: #AAAAAA;
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.btn.cv-btn {
+    display: inline-block;
+    margin-left: 0;
+    background: linear-gradient(rgba(0,0,0,0.5), #4F89D3);
+    font-weight: 700;
+}
+
+.contact_right form {
+    width: 100%;
+}
+
+form input, 
+form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: hsla(214deg, 60%, 57%, 10%);
+    padding: 12px;
+    margin: 15px 0;
+    color: #AAAAAA;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .cv-btn {
+    padding: 12px 60px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+footer p {
+    text-align: center;
+}
 
 /*--------------------------Media query scetion-----------------------------------------*/
 @media only screen and (max-width: 600px) {
