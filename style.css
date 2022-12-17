@@ -5,6 +5,10 @@
     font-family: 'El Messiri', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #3B3C51;
     color: #4F89D3;
@@ -84,6 +88,17 @@ nav ul li a:hover::after {
 
 .header-text h1 {
     color: #AAAAAA;
+}
+
+.header-text h1,
+.header-text p {
+    transition: transform 0.5s;
+}
+
+.header-text h1:hover,
+.header-text p:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
 }
 
 #icons {
@@ -364,6 +379,11 @@ form .cv-btn {
     cursor: pointer;
 }
 
+footer {
+    background-color: hsla(214deg, 60%, 57%, 10%);
+    padding: 10px;
+}
+
 footer p {
     text-align: center;
 }
@@ -371,19 +391,25 @@ footer p {
 /*--------------------------Media query scetion-----------------------------------------*/
 @media only screen and (max-width: 600px) {
     header {
-        background-image: url(images/mobile-bg3.png);
+        background-image: url(images/mobile-bg4.png);
         background-position: center;
         background-size: cover;
     } 
     
     .header-text {
-        margin-top: 100%;
-        font-size: 1.2rem;
-        font-weight: 700;
+        margin-top: 14em;
+        font-size: 1.5em;
+        font-weight: 900;
     }
 
     .header-text h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+        margin-left: 51px;
+    }
+
+    .header-text p {
+        margin-left: 37px;
+        text-align: center;
     }
 
     #icons {
@@ -457,6 +483,43 @@ footer p {
 
     .border {
         border-radius: 20px;
-        /* width: 75vw; */
+    }
+
+    .about_left {
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .about_right {
+        font-size: 14px;
+    }
+
+    .about_links {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+
+    /* ------------projects------------ */
+    .project_list {
+        margin-left: 50px;
+    }
+
+    #portfolio .wrapper .text_title {
+        text-align: center;
+    }
+
+    /* ---------------contact--------------- */
+    .contact_left,
+    .contact_right {
+        flex-basis: 100%;
+    }
+
+    .contact_left .text_title {
+        text-align: center;
+    }
+
+    form .btn.cv-btn {
+        text-align: center;
     }
 }
