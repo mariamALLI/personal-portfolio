@@ -523,3 +523,9 @@ footer p {
         text-align: center;
     }
 }
+
+#msg {
+    color: #AAAAAA;
+    display: block;
+    margin-top: -35px;
+}
